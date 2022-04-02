@@ -1,7 +1,7 @@
 ## This repository contains:
 
-### 1) R Package to execute the vocal diagnosability test by Isler, Isler & Whitney (1998).
-### 2) Other relevant R scripts for Sin et al. (2022) (in "Supplementary Materials" folder). 
+### (1) R Package to execute the vocal diagnosability test by Isler, Isler & Whitney (1998).
+### (2) Other relevant R scripts for Sin et al. (2022) (in "Supplementary Materials" folder). 
 
 #### Installation in R:
 
@@ -9,7 +9,7 @@
 
 #### Citation:
 
-Formulas for this was adapted from Isler et al. (1998) and this R package was prepared for Sin et al. (2022). If you reuse this package please cite:
+Formulas for (1) were adapted from Isler et al. (1998). The package was prepared for Sin et al. (2022). If you reuse this package please cite:
 
 - Isler, M. L., Isler, P. R., & Whitney, B. M. (1998). Use of vocalizations to establish species limits in antbirds (Passeriformes: Thamnophilidae). The Auk, 115(3), 577-590.
 
@@ -17,25 +17,38 @@ Formulas for this was adapted from Isler et al. (1998) and this R package was pr
 
 #### About
 
-The vocal diagnosability test by Isler et al. (1998) (henceforth Isler criterion) was designed as a conservative method to examine vocal differences between populations of birds. Whlie originally crafted to study differentiation in Antbirds, the Isler criterion has since been adopted to inspect divergences between many other groups of birds (both Passerines and non-Passerines) across various regions.
+The vocal diagnosability test by Isler et al. (1998) (henceforth Isler criterion) was designed as a conservative method to examine vocal differences between populations of birds. Whlie originally crafted to study differentiation in Antbirds, the Isler criterion has since been adopted to inspect divergences between many other groups of birds (both Passerines and non-Passerines) across various regions of the world.
 
 The Isler criterion assigns diagnosability to pairs of populations which continuous vocal characters satisfy the following two criteria:
 
 1) Ranges of measurements for the two populations do not overlap
 2) Measurements meets the following criterion
-x_a + t_a * SD_a <= x_b + t_b * SD_b
-where subscripts refer to the two populations: (a) with smaller set of measurements and (b) with larger set of measurements. x = mean; SD = standard deviation; and t = t-score at 97.5 percentile of the t distribution for n-1 degrees of freedom.
+![](https://latex.codecogs.com/svg.image?\overline{x}_{a}&plus;{t}_{a}{SD}_{a}\leq&space;\overline{x}_{b}&plus;{t}_{b}{SD}_{b})
+where
+![](https://latex.codecogs.com/svg.image?\overline{x}_{i}) = 
+mean;
+![](https://latex.codecogs.com/svg.image?{SD}_{i}) =
+standard deviation; and
+![](https://latex.codecogs.com/svg.image?{t}_{i}) =
+t-score at 97.5 percentile of the t distribution for n-1 degrees of freedom, with population
+![](https://latex.codecogs.com/svg.image?a)
+having the smaller set of measurements and population
+![](https://latex.codecogs.com/svg.image?b)
+with larger set of measurements..
 
 #### Usage
 
-	vocal_diagnose(dataframe, min.sample, verbose)
+	vocal_diagnose(data, min.sample, prose)
 
 Your dataframe should contain X rows x Y columns.
 
-Each row should include parameters from one vocal sample (i.e., one individual). The first column must contain taxa/population assignment, and subsequent columns should each contain vocal parameters.
+Each row should include parameters from one vocal sample (i.e., one individual). The first column must contain taxa/population assignment of the sample, and subsequent columns should contain measurements of one vocal parameter each.
 
-Row and column names need not be specified, but setting column names corresponding to each vocal parameter will allow results to be read easily.
+Row and column names need not be specified, but setting column names corresponding to each vocal parameter will allow results to be easily read.
 
+min.sample refers to the minimum sample size allowed for each taxa/populations for the Isler criterion to be tested. Default = 2.
+
+prose (TRUE/FALSE) does not affect results, but the way it is presented. If TRUE, the result will be a dataframe with each rownames "Taxa 1 vs Taxa 2" each. If FALSE, the result will be a data be a dataframe with Taxa 1 in first column and Taxa 2 in second column. 
 
 
 
