@@ -48,9 +48,20 @@ Row and column names need not be specified, but setting column names correspondi
 
 min.sample refers to the minimum sample size allowed for each taxa/populations for the Isler criterion to be tested. Default = 2.
 
-prose (TRUE/FALSE) does not affect results, but the way it is presented. If TRUE, the result will be a dataframe with each rownames "Taxa 1 vs Taxa 2" each. If FALSE, the result will be a data be a dataframe with Taxa 1 in first column and Taxa 2 in second column. 
+prose (either TRUE/FALSE, Default FALSE) does not affect results, but the way they will be presented. If TRUE, the result will be a dataframe with each rownames "Taxa 1 vs Taxa 2" each. If FALSE, the result will be a data be a dataframe with Taxa 1 in first column and Taxa 2 in second column. 
 
+#### Outputs
 
+The output object diagnose is a list of three objects.
+
+diagnose$diagnosability informs whether each pairwise Isler criterion test is diagnosable. NA = no, "1" = yes.
+
+diagnose$inspect provides information on the specific criteria that was met in the Isler criterion test (overlap in raw measurements and overlap in Isler formula respectively).
+"1": only criterion 1 was met
+"2": only criterion 2 was met
+"3": both criteria 1 and 2 were met (i.e., the pairs are diagnosable according to the Isler criterion)
+
+diagnose$param.sum provides information on the number of pairs that could were diagnosable by each respective vocal parameter.
 
 
 
