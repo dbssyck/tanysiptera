@@ -44,22 +44,22 @@ with larger set of measurements.
 
 	vocal_diagnose(data, min.sample, prose)
 
-data: Dataframe containing vocal parameters. Each row should include parameters from one vocal sample (i.e., one individual). Column 1 must contain taxa/population assignment of the sample, and subsequent columns must contain measurements of one vocal parameter each. Row and column names need not be specified, but setting column names corresponding to each vocal parameter will allow results to be easily read.
+data:	Dataframe containing vocal parameters. Each row should include parameters from one vocal sample (i.e., one individual). Column 1 must contain taxa/population assignment of the sample, and subsequent columns must contain measurements of one vocal parameter each. Row and column names need not be specified, but setting column names corresponding to each vocal parameter will allow results to be easily read.
 
-min.sample: Default = 2. Minimum sample size allowed for each taxa/populations for Isler test to be tested. 
+min.sample:	Default = 2. Minimum sample size allowed for each taxa/populations for Isler test to be tested. 
 
-prose: TRUE/FALSE. Default = FALSE. If TRUE, the result will be a dataframe with rownames spelled out as "Taxa 1 vs Taxa 2" for each pairwise comparison. If FALSE, the result will be a dataframe with Taxa 1 in first column and Taxa 2 in second column for each pairwise comparison. Does not affect results.
+prose:	TRUE/FALSE. Default = FALSE. If TRUE, the result will be a dataframe with rownames spelled out as "Taxa 1 vs Taxa 2" for each pairwise comparison. If FALSE, the result will be a dataframe with Taxa 1 in first column and Taxa 2 in second column for each pairwise comparison. Does not affect results.
 
 #### Outputs
 
-diagnose$diagnosability: informs whether each pairwise Isler test is diagnosable. NA = no, "1" = yes.
+diagnose$diagnosability:	informs whether each pairwise Isler test is diagnosable. NA = no, "1" = yes.
 
-diagnose$inspect: provides information on the specific criteria that was met in the test
+diagnose$inspect:	provides information on the specific criteria that was met in the test
 "1": only criterion 1 was met
 "2": only criterion 2 was met
 "3": both criteria 1 and 2 were met (i.e., the pairs are diagnosable according to the Isler test)
 
-diagnose$param.sum provides information on the number of pairs that could were diagnosable by each respective vocal parameter.
+diagnose$param.sum:	provides information on the number of pairs that could were diagnosable by each respective vocal parameter.
 
 
 
