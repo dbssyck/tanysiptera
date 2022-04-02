@@ -3,11 +3,11 @@
 ### (1) R Package to execute the vocal diagnosability test by Isler, Isler & Whitney (1998).
 ### (2) Other relevant R scripts for Sin et al. (2022) (in "Supplementary Materials" folder). 
 
-#### Installation in R:
+#### Installation in R
 
 	install_github("dbssyck/tanysiptera")
 
-#### Citation:
+#### Citation
 
 Formulas for (1) were adapted from Isler et al. (1998). The package was prepared for Sin et al. (2022). If you reuse this package please cite:
 
