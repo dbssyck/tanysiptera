@@ -40,8 +40,6 @@ with larger set of measurements..
 
 	vocal_diagnose(data, min.sample, prose)
 
-Your dataframe should contain X rows x Y columns.
-
 Each row should include parameters from one vocal sample (i.e., one individual). The first column must contain taxa/population assignment of the sample, and subsequent columns should contain measurements of one vocal parameter each.
 
 Row and column names need not be specified, but setting column names corresponding to each vocal parameter will allow results to be easily read.
