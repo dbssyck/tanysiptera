@@ -46,9 +46,9 @@ with larger set of measurements.
 
 data:	Dataframe containing vocal parameters. Each row should include parameters from one vocal sample (i.e., one individual). Column 1 must contain taxa/population assignment of the sample, and subsequent columns must contain measurements of one vocal parameter each. Row and column names need not be specified, but setting column names corresponding to each vocal parameter will allow results to be easily read.
 
-min.sample:	Default = 2. Minimum sample size allowed for each taxa/populations for Isler test to be tested. 
+min.sample:	Default = 2. Minimum sample size allowed for each taxa/populations for Isler test to be conducted.
 
-prose:	TRUE/FALSE. Default = FALSE. If TRUE, the result will be a dataframe with rownames spelled out as "Taxa 1 vs Taxa 2" for each pairwise comparison. If FALSE, the result will be a dataframe with Taxa 1 in first column and Taxa 2 in second column for each pairwise comparison. Does not affect results.
+prose:	Default = FALSE. If TRUE, the result will be a dataframe with rownames spelled out as "Taxa 1 vs Taxa 2" for each pairwise comparison. If FALSE, the result will be a dataframe with Taxa 1 in first column and Taxa 2 in second column for each pairwise comparison.
 
 #### Outputs
 
