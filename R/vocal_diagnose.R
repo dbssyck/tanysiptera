@@ -13,7 +13,9 @@
 #'@param prose Default = FALSE. If TRUE, the result will be a dataframe with rownames spelled out as "Taxa 1 vs Taxa 2" for each pairwise comparison. If FALSE, the result will be a dataframe with Taxa 1 in first column and Taxa 2 in second column for each pairwise comparison.
 #'
 #'@examples
-#'vocal_diagnose()
+#'test_data <- read.csv(system.file("extdata", "test_data.txt", package="tanysiptera"), sep = "\t")
+#'head(test_data)
+#'vocal_diagnose(test_data)
 
 
 

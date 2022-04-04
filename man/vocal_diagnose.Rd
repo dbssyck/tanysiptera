@@ -9,13 +9,13 @@ vocal_diagnose(data, min.sample = 2, prose = FALSE)
 \arguments{
 \item{data}{Dataframe containing vocal parameters. Each row should include parameters from one vocal sample (i.e., one individual). Column 1 must contain taxa/population assignment of the sample, and subsequent columns must contain measurements of one vocal parameter each.}
 
-\item{min.sample}{Default = 2. Minimum sample size allowed for each taxa/populations for Isler test to be tested.}
+\item{min.sample}{Default = 2. Minimum sample size allowed for each taxa/populations for Isler test to be conducted.}
 
-\item{prose}{TRUE/FALSE. Default = FALSE. If TRUE, the result will be a dataframe with rownames spelled out as "Taxa 1 vs Taxa 2" for each pairwise comparison. If FALSE, the result will be a dataframe with Taxa 1 in first column and Taxa 2 in second column for each pairwise comparison.}
+\item{prose}{Default = FALSE. If TRUE, the result will be a dataframe with rownames spelled out as "Taxa 1 vs Taxa 2" for each pairwise comparison. If FALSE, the result will be a dataframe with Taxa 1 in first column and Taxa 2 in second column for each pairwise comparison.}
 }
 \description{
 This function examines vocal diagnosability based on the criterion designed by Isler, Isler & Whitney (1998).
-\cr Reference: Isler, M. L., Isler, P. R., & Whitney, B. M. (1998). Use of vocalizations to establish species limits in antbirds (Passeriformes: Thamnophilidae). The Auk, 115(3), 577-590.
+\cr\cr Reference: Isler, M. L., Isler, P. R., & Whitney, B. M. (1998). Use of vocalizations to establish species limits in antbirds (Passeriformes: Thamnophilidae). The Auk, 115(3), 577-590.
 }
 \details{
 To be diagnosable, vocal parameters must meet both of the following criteria:
@@ -25,5 +25,7 @@ To be diagnosable, vocal parameters must meet both of the following criteria:
 }
 }
 \examples{
-vocal_diagnose()
+test_data <- read.csv(system.file("extdata", "test_data.txt", package="tanysiptera"), sep = "\t")
+head(test_data)
+vocal_diagnose(test_data)
 }
