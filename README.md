@@ -1,7 +1,7 @@
-## This repository contains:
+# This repository contains:
 
-### (1) R Package to execute the vocal diagnosability test by Isler, Isler & Whitney (1998).
-### (2) Other relevant R scripts for Sin et al. (2022) (in "Supplementary Materials" folder). 
+## (1) R Package to execute the vocal diagnosability test by Isler, Isler & Whitney (1998).
+### (2) Other relevant R scripts for Sin et al. (2022) in "SupplementaryMaterials_Sin-et-al._2022" folder. 
 
 #### Installation in R
 
