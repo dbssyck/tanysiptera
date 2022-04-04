@@ -61,7 +61,16 @@ diagnose$inspect:	provides information on the specific criteria that was met in 
 
 diagnose$param.sum:	provides information on the number of pairs that could were diagnosable by each respective vocal parameter.
 
+#### Example of how data should look like
 
+|Taxa|Centre.Frequency..Hz.|Bandwidth.of.first.note..Hz.|Duration.of.first.note..seconds.|Shape.of.second.note|Total.number.of.notes|Position.of.note.with.lowest.centre.frequency
+| ------------- |:-------------:| -----:| -----:| -----:| -----:| -----:|
+|galatea|1894.933333|648.5333333|0.749|0.10809768|33.66666667|0.038618157
+|minor|1900.325|316.9875|0.457208333|0.179217632|24.91666667|0.052062848
+|browningi|2257.914286|1425.571429|0.311857143|0|34.28571429|0.082531203
+|boanensis|1787.25|175.05|0.029|0.369444445|33.5|0.005280042
+|browningi|2402.358333|1445.858333|0.5075|0|25|0.068023823
+|doris|1937.533333|1176.1|0.439|0|32.66666667|0.088103372
 
 
 
