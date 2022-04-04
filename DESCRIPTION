@@ -1,13 +1,13 @@
 Package: tanysiptera
-Title: What the Package Does (One Line, Title Case)
+Title: vocal_diagnose
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Y.C.K.",
+           family = "Sin",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
+           email = "dbssyck@nus.edu.sg",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Description: Test vocal diagnosability criteria by Isler, Isler & Whitney (1998)
 License: `use_mit_license()`, `use_gpl3_license()` or friends to
     pick a license
 Encoding: UTF-8
