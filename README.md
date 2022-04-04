@@ -44,7 +44,7 @@ with larger set of measurements.
 
 	vocal_diagnose(data, min.sample, prose)
 
-data:	Dataframe containing vocal parameters. Each row should include parameters from one vocal sample (i.e., one individual). Column 1 must contain taxa/population assignment of the sample, and subsequent columns must contain measurements of one vocal parameter each. Row and column names need not be specified, but setting column names corresponding to each vocal parameter will allow results to be easily read.
+data:	Dataframe containing vocal parameters. Each row should include parameters from one vocal sample (i.e., one individual). Column 1 must contain taxa/population assignment of the sample, and subsequent columns must contain measurements of one vocal parameter each.
 
 min.sample:	Default = 2. Minimum sample size allowed for each taxa/populations for Isler test to be conducted.
 
@@ -61,7 +61,7 @@ diagnose$inspect:	provides information on the specific criteria that was met in 
 
 diagnose$param.sum:	provides information on the number of pairs that could were diagnosable by each respective vocal parameter.
 
-#### Example of how data should look like
+#### Example of Data Format
 
 |Taxa|Centre.Frequency..Hz.|Bandwidth.of.first.note..Hz.|Duration.of.first.note..seconds.|Shape.of.second.note|Total.number.of.notes|Position.of.note.with.lowest.centre.frequency
 | ------------- |:-------------:| -----:| -----:| -----:| -----:| -----:|
@@ -71,6 +71,4 @@ diagnose$param.sum:	provides information on the number of pairs that could were 
 |boanensis|1787.25|175.05|0.029|0.369444445|33.5|0.005280042
 |browningi|2402.358333|1445.858333|0.5075|0|25|0.068023823
 |doris|1937.533333|1176.1|0.439|0|32.66666667|0.088103372
-
-
 
