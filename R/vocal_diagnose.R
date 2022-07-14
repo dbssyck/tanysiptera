@@ -16,7 +16,7 @@
 #'test_data <- read.csv(system.file("extdata", "test_data.txt", package="tanysiptera"), sep = "\t")
 #'head(test_data)
 #'vocal_diagnose(test_data)
-
+#' @export
 
 
 # Initiate function
