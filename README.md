@@ -72,3 +72,6 @@ diagnose$param.sum:	provides information on the number of pairs that could were 
 |browningi|2402.358333|1445.858333|0.5075|0|25|0.068023823
 |doris|1937.533333|1176.1|0.439|0|32.66666667|0.088103372
 
+#### To use the test file
+
+	test <- read.table(system.file ("extdata", "test_data.txt", package = "tanysiptera"), header = TRUE) 
