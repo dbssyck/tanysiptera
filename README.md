@@ -13,7 +13,7 @@ Formulas for (1) were adapted from Isler et al. (1998). The package was prepared
 
 - Isler, M. L., Isler, P. R., & Whitney, B. M. (1998). Use of vocalizations to establish species limits in antbirds (Passeriformes: Thamnophilidae). The Auk, 115(3), 577-590.
 
-- Sin, Y.C.K., Eaton, J. A., Hutchinson, R. O. & Rheindt, F. E. (2022). Re-assessing species limits in a morphologically cryptic australasian kingfisher lineage (Coraciiformes: Halcyonidae) using bioacoustic data. Biological Journal of the Linnean Society.
+- Sin, Y. C. K., Eaton, J. A., Hutchinson, R. O., & Rheindt, F. E. (2022). Re-assessing species limits in a morphologically cryptic Australasian kingfisher lineage (Coraciiformes: Halcyonidae) using bioacoustic data. Biological Journal of the Linnean Society, 136(4), 489-505.
 
 #### About
 
