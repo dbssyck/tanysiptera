@@ -5,8 +5,8 @@ Authors@R:
     person(given = "Y.C.K.",
            family = "Sin",
            role = c("aut", "cre"),
-           email = "dbssyck@nus.edu.sg",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+           email = "keitasin@u.nus.sg",
+           comment = c(ORCID = "0009-0000-2563-3347"))
 Description: Test vocal diagnosability criteria by Isler, Isler & Whitney (1998)
 License: `use_mit_license()`, `use_gpl3_license()` or friends to
     pick a license
